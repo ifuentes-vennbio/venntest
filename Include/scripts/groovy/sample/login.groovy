@@ -70,4 +70,9 @@ class login {
 	def clickLogin() {
 		WebUI.click(findTestObject('login/btnLogin'))
 	}
+	
+	@Then("Validate successfull login")
+	def validate() {
+		WebUI.verifyElementPresent(findTestObject('login/dashBoard'), 5)
+	}
 }
