@@ -7,4 +7,4 @@ Feature: Login
     When I input valid Username
     And I input valid password
     And I Click Login
-    #Then Validate successfull login
+    Then Validate successfull login

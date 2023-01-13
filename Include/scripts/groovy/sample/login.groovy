@@ -60,15 +60,14 @@ class login {
 	def inputUsername() {
 		WebUI.setText(findTestObject('login/txtField',[('text') : 'Email address']), GlobalVariable.username)
 	}
-	
+
 	@And("I input valid password")
 	def inputPassword() {
 		WebUI.setText(findTestObject('login/txtField',[('text') : 'Password']), GlobalVariable.password)
 	}
-	
+
 	@And("I Click Login")
 	def clickLogin() {
 		WebUI.click(findTestObject('login/btnLogin'))
 	}
-	
 }
